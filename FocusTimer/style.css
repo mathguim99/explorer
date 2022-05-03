@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-hue: 194;
+    --color-primary: hsl(var(--color-hue), 97%, 31%);
+    --color-secondary: hsl(var(--color-hue), 9%, 100%);
+    --color-bg: hsl(var(--color-hue), 0%, 100%);
+    --color-text: hsl(var(--color-hue), 6%, 21%);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg);
+
+    height: 100%;
+}
+
+main {
+    display: flex;
+    gap: 19.2rem;
+    align-items: center;
+}
+
+main h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12.6rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+
+#controls button {
+    border: 0;
+    background: none;
+    width: 4.8rem;
+    height: 4.8rem;
+
+    transition: all 100ms;
+}
+
+#sounds {
+    display: grid;
+    grid-template-areas: 'forest rain'
+    'cafe fireplace';
+    gap: 3.2rem;
+}
+
+#sounds button {
+    width: 13.8rem;
+    height: 15.2rem;
+    border: none;
+    border-radius: 24px;
+
+    transition: all 100ms;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+#sounds #forest {
+    grid-area: 'forest';
+}
+
+#sounds #rain {
+    grid-area: 'rain';
+}
+
+#sounds #cafe {
+    grid-area: 'cafe';
+}
+
+#sounds #fireplace {
+    grid-area: 'fireplace';
+}
+
+#sounds .playing {
+    background-color: var(--color-primary);
+
+    animation: sound-on 1s infinite alternate ease-out;
+}
+
+#sounds .playing svg path {
+    fill: var(--color-secondary);
+}
+
+@keyframes sound-on {
+    0% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
