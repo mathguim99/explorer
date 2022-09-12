@@ -100,11 +100,11 @@ export class FavoritesView extends Favorites {
         
         row.innerHTML = `
             <td>
-            <a href="http://github.com/maykbrito">
-                <img src="http://github.com/maykbrito.png" alt="Profile photo of Mayk Brito">
+            <a href="http://github.com/mathguim99">
+                <img src="http://github.com/mathguim99.png" alt="Profile photo of Matheus Guimarães">
                 <div>
-                    <h1>Mayk Brito</h1>
-                    <p>/maykbrito</p>
+                    <h1>Matheus Guimarães</h1>
+                    <p>mathguim99</p>
                 </div>
             </a>
             </td>
