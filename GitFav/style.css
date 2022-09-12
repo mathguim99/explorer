@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-hue: 195;
+    --color-background: hsl(var(--color-hue), 4%, 0%);
+    --color-button: hsl(var(--color-hue), 91%, 25%);
+    --color-primary: hsl(var(--color-hue), 72%, 13%);
+    --color-secondary: hsla(var(--color-hue), 61%, 6%, 50%);
+    --color-terciary: hsl(var(--color-hue), 65%, 7%);
+    --color-light: hsla(var(--color-hue), 31%, 42%, 70%);
+    --color-text: hsl(var(--color-hue), 9%, 89%);
+    --color-remove: hsl(355, 91%, 66%);
+}
+
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+button {
+    cursor: pointer;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#container {
+    max-width: 90vw;
+    margin: 11.5rem auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8.7rem;
+}
+
+#search {
+    height: 4.8rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+#search input {
+    width: 40vw;
+    padding: 1.6rem;
+    border-radius: .5rem;
+    background-color: var(--color-secondary);
+
+    color: var(--color-text);
+}
+
+#search button {
+    width: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    background-color: var(--color-button);
+    border-radius: .5rem;
+
+    text-transform: uppercase;
+    color: var(--color-text);
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    transition: all 100ms;
+}
+
+#search button:hover {
+    background: var(--color-text);
+    color: var(--color-button);
+}
+
+#search button:hover svg path {
+    fill: var(--color-button);
+}
+
+#search button:active {
+    transform: scale(.9);
+}
+
+main {
+    border: 1px solid var(--color-light);
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr th {
+    background-color: var(--color-primary);
+    height: 6.4rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-light);
+}
+
+table tr td {
+    height: 10.4rem;
+    font-weight: bold;
+}
+
+table tr#holder td {
+    padding: 0;
+    height: 55vh;
+
+    color: #4E5455;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
+
+#placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+table tr#holder td img {
+    width: 10rem;
+    height: 10rem;    
+}
+
+table tr td h1 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+table tr td p {
+    font-weight: normal;
+}
+
+table tr td:first-child a {
+    display: flex;
+    flex-direction: row;      
+    align-items: center;
+    gap: 1.6rem;
+}
+
+table tr th:nth-child(1), table tr td:nth-child(1) {
+    padding-left: 4rem;
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-light);
+}
+
+table tr:nth-child(even) {
+    background-color: var(--color-terciary);
+    border-bottom: 1px solid var(--color-light);
+}
+
+table tr:last-child {
+    border: none;
+}
+
+table button {
+    background: none;
+    color: var(--color-remove);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+td img {
+    height: 5.6rem;
+    width: 5.6rem;
+    border-radius: 9999px;
+}
