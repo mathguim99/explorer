@@ -9,4 +9,4 @@ Available [here](https://www.rocketseat.com.br/explorer).
 - **FocusTimer** -> a Pomodoro cronometer with background sounds (HTML, CSS, JS)
 - **FocusTimer - DarkMode** -> the same cronometer with new funcionalities (HTML, CSS, JS)
 - **GitFav** -> a place to save GitHub profiles, to practice API integrations (HTML, CSS, JS)
-- **SPA Universe** -> a simple website to practice the concept of Single Page Aplications (HTML, CSS, JS)
+- **SPA Universe** -> a simple website to practice the concept of Single Page Applications (HTML, CSS, JS)
