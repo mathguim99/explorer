@@ -1,6 +1,6 @@
 # ![Logo](https://www.rocketseat.com.br/assets/logos/explorer.svg)
 
-Here are some projects developed by me during Explorer - a Rocketseat program where I learned HTML, CSS, JS, Git, Node.JS and React.
+Here are some simple projects developed by me during Explorer - a Rocketseat program where I learned HTML, CSS, JS, Git, Node.JS and React.
 Available [here](https://www.rocketseat.com.br/explorer).
 
 
